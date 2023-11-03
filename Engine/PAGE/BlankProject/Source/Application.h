@@ -16,6 +16,10 @@ public:
 
 
 public:
+
+	/* Called to setup our pergame settings  */
+	VOID SetupPerGameSettings();
+
 	/* Called to Initialize the Application  */
 	VOID Initialize();
 

@@ -8,3 +8,5 @@
 #define HInstance() GetModuleHandle(NULL)
 
 #include "page.h"
+
+#include "Common/Logger.h"
