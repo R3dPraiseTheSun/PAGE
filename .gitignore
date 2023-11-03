@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+*.vsidx
+Engine/PAGE/.vs/PAGE/v17

@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  WinMain.cpp
+  Generating code
+  Compiler switch has changed, fall back to full compilation.
+  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  BlankProject.vcxproj -> C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\BlankProject\Release\BlankProject.exe
