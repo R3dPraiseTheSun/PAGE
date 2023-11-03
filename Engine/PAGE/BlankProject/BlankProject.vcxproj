@@ -61,6 +61,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\BlankProject\Source;C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\PAGE\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -79,6 +80,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\BlankProject\Source;C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\PAGE\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -88,11 +90,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\pch.cpp" />
     <ClCompile Include="Source\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Content\Icons\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAGE\PAGE.vcxproj">
+      <Project>{5a3171a7-d002-4cc2-b5e5-ccfd90d32085}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

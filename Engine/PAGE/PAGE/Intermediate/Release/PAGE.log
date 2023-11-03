@@ -1,0 +1,8 @@
+﻿  page.cpp
+  IApplication.cpp
+     Creating library C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Release\PAGE.lib and object C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Release\PAGE.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PAGE.vcxproj -> C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\PAGE\Release\PAGE.dll

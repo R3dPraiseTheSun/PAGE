@@ -2,6 +2,9 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+      <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\PAGE\Release\PAGE.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\BlankProject\Release\BlankProject.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

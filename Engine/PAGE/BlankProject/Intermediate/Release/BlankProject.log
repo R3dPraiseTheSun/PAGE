@@ -1,7 +1,10 @@
-﻿  pch.cpp
+﻿  Application.cpp
+  pch.cpp
   WinMain.cpp
+LINK : warning C4727: PCH named c:\users\paion\onedrive\desktop\page\page\engine\page\blankproject\intermediate\release\blankproject.pch with same timestamp found in c:\users\paion\onedrive\desktop\page\page\engine\page\blankproject\intermediate\release\winmain.obj and c:\users\paion\onedrive\desktop\page\page\engine\page\blankproject\intermediate\release\pch.obj.  Using first PCH.
   Generating code
-  Compiler switch has changed, fall back to full compilation.
-  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  7 of 7 functions (100.0%) were compiled.
+    6 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   BlankProject.vcxproj -> C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\BlankProject\Release\BlankProject.exe
