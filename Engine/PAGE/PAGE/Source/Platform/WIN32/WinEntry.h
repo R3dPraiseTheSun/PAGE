@@ -2,6 +2,7 @@
 
 #include "IApplication.h"
 #include "Common/CmdLineArgs.h"
+#include "Engine/SplashScreen.h"
 
 extern Win32::IApplication* EntryApplication();
 
@@ -16,6 +17,9 @@ INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 	CmdLineArgs::ReadArguments();
 
 	Logger logger;
+
+	SplashScreen::Open();
+
 	EntryApp->Initialize();
 
 

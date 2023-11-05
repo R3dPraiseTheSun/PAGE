@@ -1,13 +1,7 @@
-﻿  CmdLineArgs.cpp
-  Logger.cpp
-  Time.cpp
-  Core.cpp
-  CoreDefinitions.cpp
-  CoreMinimal.cpp
-  PerGameSettings.cpp
-  OEngine.cpp
-  Simulation.cpp
-  IApplication.cpp
-  page.cpp
+﻿  SplashScreen.cpp
+C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\PAGE\Source\Platform\Win32\SubObject.h(23,17): warning C4251: 'Win32::SubObject::m_Class': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of class 'Win32::SubObject'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5301,29): message : see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\PAGE\Source\Platform\Win32\SubObject.h(24,17): warning C4251: 'Win32::SubObject::m_Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of class 'Win32::SubObject'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5301,29): message : see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
      Creating library C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Debug\PAGE.lib and object C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Debug\PAGE.exp
   PAGE.vcxproj -> C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\PAGE\Debug\PAGE.dll
