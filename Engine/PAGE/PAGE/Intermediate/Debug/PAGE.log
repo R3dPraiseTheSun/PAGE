@@ -1,7 +1,13 @@
-﻿  Logger.cpp
+﻿  CmdLineArgs.cpp
+  Logger.cpp
   Time.cpp
+  Core.cpp
+  CoreDefinitions.cpp
+  CoreMinimal.cpp
   PerGameSettings.cpp
-  page.cpp
+  OEngine.cpp
+  Simulation.cpp
   IApplication.cpp
+  page.cpp
      Creating library C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Debug\PAGE.lib and object C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\\Build\PAGE\Debug\PAGE.exp
   PAGE.vcxproj -> C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\PAGE\Debug\PAGE.dll
