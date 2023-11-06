@@ -9,5 +9,7 @@ namespace PAGE {
 		Simulation();
 		~Simulation();
 
+		virtual VOID PreInitialize() override;
+
 	};
 }

@@ -105,6 +105,9 @@
     <ClCompile Include="Source\Platform\Win32\Window.cpp">
       <Filter>Source\Platform\Win32\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platform\Win32\Win32Utils.cpp">
+      <Filter>Source\Engine\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\PerGameSettings.h">
@@ -151,6 +154,9 @@
     </ClInclude>
     <ClInclude Include="Source\Platform\Win32\Window.h">
       <Filter>Source\Platform\Win32\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Win32\Win32Utils.h">
+      <Filter>Source\Engine\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

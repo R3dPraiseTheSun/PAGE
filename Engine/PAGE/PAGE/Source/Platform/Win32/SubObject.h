@@ -25,8 +25,10 @@ namespace Win32 {
 
 		HICON				m_hIcon;
 
-	//public:
-	//	HWND GetHandle() { return m_Handle; }
+		HWND				m_Handle;
+
+	public:
+		HWND GetHandle() { return m_Handle; }
 
 	};
 
