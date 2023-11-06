@@ -44,11 +44,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\Build\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\$(ProjectName)\Intermediate\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\Build\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\$(ProjectName)\Intermediate\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -105,6 +105,7 @@
     <ClCompile Include="Source\Platform\Win32\SubObject.cpp" />
     <ClCompile Include="Source\Platform\Win32\Win32Utils.cpp" />
     <ClCompile Include="Source\Platform\Win32\Window.cpp" />
+    <ClCompile Include="Source\Platform\Win32\w32Caption.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Common\CmdLineArgs.h" />
@@ -123,6 +124,7 @@
     <ClInclude Include="Source\Platform\Win32\Win32Utils.h" />
     <ClInclude Include="Source\Platform\Win32\Window.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
+    <ClInclude Include="Source\Platform\Win32\w32Caption.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

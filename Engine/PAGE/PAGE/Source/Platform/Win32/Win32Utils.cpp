@@ -13,7 +13,7 @@ namespace Win32 {
             HBITMAP hBitmap = (HBITMAP)LoadImage(NULL, szFileName, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE);
             if (hBitmap == NULL) {
                 DWORD error = GetLastError();
-                std::wstring errorMessage = L"LoadImage failed with error code: " + std::to_wstring(error);
+                WSTRING errorMessage = L"LoadImage failed with error code: " + std::to_wstring(error);
 
                 MessageBox(NULL, errorMessage.c_str(), L"Error", MB_OK);
                 return false;

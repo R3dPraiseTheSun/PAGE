@@ -16,7 +16,7 @@ namespace Engine {
 	VOID PAGE_API SetMode(EngineMode mode);
 	EngineMode PAGE_API GetMode();
 
-	std::wstring PAGE_API EngineModeToString();
+	WSTRING PAGE_API EngineModeToString();
 
 }
 

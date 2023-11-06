@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\PAGE\Debug\PAGE.dll</FullPath>
+      <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\Debug\PAGE.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\BlankProject\Debug\BlankProject.exe</FullPath>
+      <FullPath>C:\Users\paion\OneDrive\Desktop\PAGE\PAGE\Engine\PAGE\Build\Debug\BlankProject.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

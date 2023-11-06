@@ -4,11 +4,11 @@
 namespace Time {
 
 	/* Get current time in string format */
-	std::wstring PAGE_API GetTime(BOOL stripped = FALSE);
+	WSTRING PAGE_API GetTime(BOOL stripped = FALSE);
 
 	/* Get current date in string format */
-	std::wstring PAGE_API GetDate(BOOL stripped = FALSE);
+	WSTRING PAGE_API GetDate(BOOL stripped = FALSE);
 
 	/* Get current date and time in string format */
-	std::wstring PAGE_API GetDateTimeString(BOOL stripped = FALSE);
+	WSTRING PAGE_API GetDateTimeString(BOOL stripped = FALSE);
 }

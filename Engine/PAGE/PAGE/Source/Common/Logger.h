@@ -18,8 +18,8 @@ public:
 	/* Print to Log File */
 	static VOID PrintLog(const WCHAR* fmt, ...);
 
-	static std::wstring LogDirectory();
-	static std::wstring LogFile();
+	static WSTRING LogDirectory();
+	static WSTRING LogFile();
 
 	/* Print a line of '-' char's */
 	static VOID PrintDebugSeperator();

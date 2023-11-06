@@ -61,6 +61,9 @@
     <Filter Include="Source\Common\Classes">
       <UniqueIdentifier>{e2374def-9ac9-47f3-9f19-bcb872b1a955}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Pch">
+      <UniqueIdentifier>{09d9f495-ef56-40ce-8118-6c54b40f68c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\PerGameSettings.cpp">
@@ -93,9 +96,6 @@
     <ClCompile Include="Source\Common\CmdLineArgs.cpp">
       <Filter>Source\Common\Private</Filter>
     </ClCompile>
-    <ClCompile Include="Source\page.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Engine\SplashScreen.cpp">
       <Filter>Source\Engine\Private</Filter>
     </ClCompile>
@@ -105,8 +105,14 @@
     <ClCompile Include="Source\Platform\Win32\Window.cpp">
       <Filter>Source\Platform\Win32\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\page.cpp">
+      <Filter>Source\Pch</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Platform\Win32\Win32Utils.cpp">
-      <Filter>Source\Engine\Private</Filter>
+      <Filter>Source\Platform\Win32\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platform\Win32\w32Caption.cpp">
+      <Filter>Source\Platform\Win32\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -143,9 +149,6 @@
     <ClInclude Include="Source\Common\CmdLineArgs.h">
       <Filter>Source\Common\Public</Filter>
     </ClInclude>
-    <ClInclude Include="Source\page.h">
-      <Filter>Source</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Engine\SplashScreen.h">
       <Filter>Source\Engine\Public</Filter>
     </ClInclude>
@@ -155,8 +158,14 @@
     <ClInclude Include="Source\Platform\Win32\Window.h">
       <Filter>Source\Platform\Win32\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="Source\page.h">
+      <Filter>Source\Pch</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Platform\Win32\Win32Utils.h">
-      <Filter>Source\Engine\Public</Filter>
+      <Filter>Source\Platform\Win32\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Win32\w32Caption.h">
+      <Filter>Source\Platform\Win32\Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

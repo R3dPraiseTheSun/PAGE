@@ -15,7 +15,7 @@ namespace Engine {
 		return g_PAGEEngine.GetEngineMode();
 	}
 
-	std::wstring PAGE_API EngineModeToString()
+	WSTRING PAGE_API EngineModeToString()
 	{
 		switch (Engine::GetMode())
 		{
