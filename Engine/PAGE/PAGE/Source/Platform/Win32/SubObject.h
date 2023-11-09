@@ -17,8 +17,8 @@ namespace Win32 {
 		virtual			LRESULT				MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 	protected:
-		WSTRING		m_Class;
-		WSTRING		m_Title;
+		WSTRING				m_Class;
+		WSTRING				m_Title;
 
 		HICON				m_hIcon;
 

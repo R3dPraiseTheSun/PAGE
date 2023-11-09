@@ -1,13 +1,13 @@
 #pragma once
 
 #include "SubObject.h"
-
 #include <Uxtheme.h>
+
 #pragma comment(lib,"uxtheme.lib")
 
 namespace Win32 {
 	
-	class PAGE_API Window : public Win32::SubObject, public Win32::Caption {
+	class PAGE_API Window : public SubObject, public Caption {
 
 	public:
 		Window(WSTRING title, HICON icon, WindowType type = RESIZABLE);
@@ -15,7 +15,7 @@ namespace Win32 {
 
 		virtual VOID Initialize() override;
 
-		virtual			LRESULT				MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) override;
+		virtual	LRESULT	MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) override;
 
 		VOID RedrawWindow();
 
@@ -34,6 +34,9 @@ namespace Win32 {
 		VOID OnExitSizeMove();
 
 		VOID OnPaint();
+
+	private:
+		BOOL m_shouldQuit = false;
 
 	protected:
 		SIZE		m_Size;

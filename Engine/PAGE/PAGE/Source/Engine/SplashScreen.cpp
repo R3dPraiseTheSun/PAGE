@@ -18,7 +18,10 @@ namespace SplashScreen {
 
 	VOID PAGE_API Close()
 	{
-		return VOID PAGE_API();
+		if (m_SplashWindow != nullptr) {
+			DestroyWindow(m_SplashWindow->Handle());
+			m_SplashWindow = nullptr;
+		}
 	}
 
 	VOID PAGE_API AddMessage(const WCHAR* message)
@@ -30,7 +33,8 @@ namespace SplashScreen {
 SplashWindow::SplashWindow()
 	:Win32::Window(L"SplashScreen", NULL, Win32::WindowType::POPUP)
 {
-	wcscpy_s(m_outputMessage, L"SplashScreen Starting...");
+	wcscpy_s(m_outputMessage, PerGameSettings::GameName());
+	wcscat_s(m_outputMessage, L" Starting...");
 	Win32::Window::RegisterNewClass();
 	Size(500, 600);
 	Win32::Window::Initialize();
@@ -79,6 +83,7 @@ LRESULT SplashWindow::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPA
 			RedrawWindow();
 			return 0;
 		}
+		break;
 	}
 
 	return Window::MessageHandler(hwnd, message, wParam, lParam);

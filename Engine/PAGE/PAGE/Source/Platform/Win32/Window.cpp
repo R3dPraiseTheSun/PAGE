@@ -1,7 +1,26 @@
 ﻿#include "page.h"
 #include "Window.h"
 
+#include <d3d11.h>
+#include <d3dx11.h>
+#include <d3dx10.h>
+
+// include the Direct3D Library file
+#pragma comment (lib, "d3d11.lib")
+#pragma comment (lib, "d3dx11.lib")
+#pragma comment (lib, "d3dx10.lib")
+
+// global declarations
+IDXGISwapChain* swapchain;             // the pointer to the swap chain interface
+ID3D11Device* dev;                     // the pointer to our Direct3D device interface
+ID3D11DeviceContext* devcon;           // the pointer to our Direct3D device context
+
+
 #define DCX_USESTYLE 0x00010000
+
+// function prototypes
+void InitD3D(HWND hWnd);    // sets up and initializes Direct3D
+void CleanD3D(void);        // closes Direct3D and releases memory
 
 namespace Win32{
 
@@ -48,10 +67,11 @@ namespace Win32{
 
 			case WM_GETMINMAXINFO:			{ OnGetMinMaxInfo(((MINMAXINFO*)lParam));			  }			return 0;
 			case WM_EXITSIZEMOVE:			{ OnExitSizeMove();									  }			return 0;
-
+			
 			case WM_PAINT:					{ OnPaint();										  }			break;
-
 			case WM_TIMER:					{ RedrawWindow();									  }			break;
+
+			//case WM_QUIT:					{ CleanD3D();										  }			break;
 		}
 		return SubObject::MessageHandler(hwnd, message, wParam, lParam);
 	}
@@ -218,13 +238,56 @@ namespace Win32{
 		GetClientRect(Handle(), &rc);
 
 		HBRUSH brush = CreateSolidBrush(RGB(36, 36, 36));
-
 		FillRect(hdc, &rc, brush);
-
 		DeleteObject(brush);
+
+		SetBkMode(hdc, TRANSPARENT);
+		SetTextColor(hdc, RGB(255, 255, 255));
+		DrawText(hdc, L"Hi!", wcslen(L"Hi!"), &rc, DT_LEFT | DT_TOP);
 
 		EndPaint(Handle(), &ps);
 
 	}
+}
 
+// this function initializes and prepares Direct3D for use
+void InitD3D(HWND hWnd)
+{
+	// create a struct to hold information about the swap chain
+	DXGI_SWAP_CHAIN_DESC scd;
+
+	// clear out the struct for use
+	ZeroMemory(&scd, sizeof(DXGI_SWAP_CHAIN_DESC));
+
+	// fill the swap chain description struct
+	scd.BufferCount = 1;                                    // one back buffer
+	scd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;     // use 32-bit color
+	scd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;      // how swap chain is to be used
+	scd.OutputWindow = hWnd;                                // the window to be used
+	scd.SampleDesc.Count = 4;                               // how many multisamples
+	scd.Windowed = TRUE;                                    // windowed/full-screen mode
+
+	// create a device, device context and swap chain using the information in the scd struct
+	D3D11CreateDeviceAndSwapChain(NULL,
+		D3D_DRIVER_TYPE_HARDWARE,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		D3D11_SDK_VERSION,
+		&scd,
+		&swapchain,
+		&dev,
+		NULL,
+		&devcon);
+}
+
+
+// this is the function that cleans up Direct3D and COM
+void CleanD3D(void)
+{
+	// close and release all existing COM objects
+	swapchain->Release();
+	dev->Release();
+	devcon->Release();
 }

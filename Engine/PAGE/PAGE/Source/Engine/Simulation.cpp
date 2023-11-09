@@ -26,9 +26,13 @@ namespace PAGE {
 		Logger::PrintDebugSeperator();
 
 		SplashScreen::Open();
+	
+		std::this_thread::sleep_for(std::chrono::seconds(3));
 
 		Win32::Window::RegisterNewClass();
 		Win32::Window::Initialize();
+
+		SplashScreen::Close();
 
 	}
 

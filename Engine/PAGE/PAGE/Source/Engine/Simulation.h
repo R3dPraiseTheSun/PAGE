@@ -1,7 +1,7 @@
 #pragma once
 
 namespace PAGE {
-	class PAGE_API Simulation : public Win32::IApplication, public Win32::Window {
+	class PAGE_API Simulation : public Win32::IApplication, public Win32::Window{
 
 	public:
 		Simulation();

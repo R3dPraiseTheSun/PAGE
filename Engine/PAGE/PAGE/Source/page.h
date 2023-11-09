@@ -7,4 +7,6 @@
 #include <string>
 #include <list>
 
+#include <thread>
+
 #include "Core/Core.h"

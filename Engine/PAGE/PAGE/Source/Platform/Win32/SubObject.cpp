@@ -52,6 +52,11 @@ namespace Win32 {
 
 	LRESULT SubObject::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
+		switch (message) {
+			case WM_CLOSE: {
+				PostQuitMessage(0);
+			}
+		}
 		return DefWindowProc(hwnd, message, wParam, lParam);
 	}
 
